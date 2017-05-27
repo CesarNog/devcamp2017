@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-
 import { images } from './theme';
-import { Image, Heading, Text } from '../../src';
 
 import './acmeshop.css';
-
-const imageStyle = {
-	imageStyle
-};
 
 class AcmeShop extends Component {
 
@@ -28,7 +22,6 @@ class AcmeShop extends Component {
 			<span className="acmeshop-slide" onClick={this.onClick} >
 				<img src={images.acmeshop} className={this.state.show ? "shop show" : "shop"}/>
 				<img src={images.tree} className={this.state.show ? "tree show" : "tree"}/>
-				}
 			</span>
 		);
 	}
