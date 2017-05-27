@@ -2,7 +2,7 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Context extends Component {
-  static displayName = 'Context';
+  static displayName = 'Introduction';
   static propTypes = {
     children: PropTypes.node,
     history: PropTypes.object,

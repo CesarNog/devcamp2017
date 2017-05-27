@@ -22,7 +22,7 @@ const print = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
     global: {
       body: {
         background: 'white',
-        fontFamily: fonts.primary,
+        fontFamily: fonts.largeText,
         fontWeight: 'normal',
         fontSize: '2em',
         color: 'black',
@@ -148,7 +148,7 @@ const print = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         display: 'inline-block',
       },
       quote: {
-        borderLeft: `1px solid ${colors.primary}`,
+        borderLeft: `1px solid ${colors.largeText}`,
         paddingLeft: 40,
         display: 'block',
         color: 'black',
@@ -194,7 +194,7 @@ const print = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         h1: {
           color: 'black',
           fontSize: '7.05rem',
-          fontFamily: fonts.primary,
+          fontFamily: fonts.largeText,
           lineHeight: 1,
           fontWeight: 'bold',
           margin: 0,
@@ -202,7 +202,7 @@ const print = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         h2: {
           color: 'black',
           fontSize: '5.88rem',
-          fontFamily: fonts.primary,
+          fontFamily: fonts.largeText,
           lineHeight: 1,
           fontWeight: 'bold',
           margin: 0,
@@ -218,7 +218,7 @@ const print = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         h4: {
           color: 'black',
           fontSize: '3.82rem',
-          fontFamily: fonts.primary,
+          fontFamily: fonts.largeText,
           lineHeight: 1,
           fontWeight: 'bold',
           margin: '0.5rem auto',
@@ -226,7 +226,7 @@ const print = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         h5: {
           color: 'black',
           fontSize: '3.19rem',
-          fontFamily: fonts.primary,
+          fontFamily: fonts.largeText,
           lineHeight: 1,
           fontWeight: 'bold',
           margin: '0.5rem auto',
@@ -234,7 +234,7 @@ const print = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         h6: {
           color: 'black',
           fontSize: '2.66rem',
-          fontFamily: fonts.primary,
+          fontFamily: fonts.largeText,
           lineHeight: 1,
           fontWeight: 'bold',
           margin: '0.5rem auto',
@@ -271,7 +271,7 @@ const print = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
       text: {
         color: 'black',
         fontSize: '2.66rem',
-        fontFamily: fonts.primary,
+        fontFamily: fonts.largeText,
         margin: '0.25rem auto',
       },
     },

@@ -32,8 +32,8 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
     googleFonts,
     global: {
       body: {
-        background: colors.primary,
-        fontFamily: fonts.primary,
+        background: colors.largeText,
+        fontFamily: fonts.largeText,
         fontWeight: 'normal',
         fontSize: '2em',
         color: colors.secondary,
@@ -159,10 +159,10 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         margin: 20,
       },
       quote: {
-        borderLeft: `1px solid ${colors.primary}`,
+        borderLeft: `1px solid ${colors.largeText}`,
         paddingLeft: 40,
         display: 'block',
-        color: colors.primary,
+        color: colors.largeText,
         fontSize: '4.9rem',
         lineHeight: 1,
         fontWeight: 'bold',
@@ -205,7 +205,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         h1: {
           color: colors.tertiary,
           fontSize: '7.05rem',
-          fontFamily: fonts.primary,
+          fontFamily: fonts.largeText,
           lineHeight: 1,
           fontWeight: 'bold',
           margin: 0,
@@ -214,7 +214,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         h2: {
           color: colors.secondary,
           fontSize: '5.88rem',
-          fontFamily: fonts.primary,
+          fontFamily: fonts.largeText,
           lineHeight: 1,
           fontWeight: 'bold',
           margin: 0,
@@ -230,7 +230,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         h4: {
           color: 'black',
           fontSize: '3.82rem',
-          fontFamily: fonts.primary,
+          fontFamily: fonts.largeText,
           lineHeight: 1,
           fontWeight: 'bold',
           margin: '0.5rem auto',
@@ -238,7 +238,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         h5: {
           color: 'black',
           fontSize: '3.19rem',
-          fontFamily: fonts.primary,
+          fontFamily: fonts.largeText,
           lineHeight: 1,
           fontWeight: 'bold',
           margin: '0.5rem auto',
@@ -246,7 +246,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         h6: {
           color: 'black',
           fontSize: '2.66rem',
-          fontFamily: fonts.primary,
+          fontFamily: fonts.largeText,
           lineHeight: 1,
           fontWeight: 'bold',
           margin: '0.5rem auto',
@@ -283,7 +283,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
       text: {
         color: 'black',
         fontSize: '2.66rem',
-        fontFamily: fonts.primary,
+        fontFamily: fonts.largeText,
         margin: '0.25rem auto',
       },
     },
