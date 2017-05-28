@@ -2,15 +2,10 @@ import React, {Component} from 'react';
 import {Heading, List, ListItem, Image, Appear, CodePane} from '../../src';
 import {images, colors} from './theme';
 import Spacer from "./spacer";
+import LessonTitle from "./lessonTitle";
 
 export const Lesson1Title = () => (
-	<div>
-		<Heading size={1} caps textColor="txtPrimary" textFont="primary">
-			Lição 1
-		</Heading>
-		<Image src={images.lesson1} height="60%"/>
-	</div>
-
+	<LessonTitle image={images.lesson1} title="Lição 1"/>
 );
 
 export const Lesson1Page1 = () => (

@@ -1,19 +1,14 @@
 import React, {Component} from 'react';
 import {Code,Heading, List, ListItem, Image, Appear, CodePane} from '../../src';
 import Spacer from "./spacer";
+import LessonTitle from "./lessonTitle";
 
 import {images, colors} from './theme';
 
 export const Lesson2Title = () => (
-	<div>
-		<Heading size={1} caps textColor="txtPrimary" textFont="primary">
-			Lição 2
-		</Heading>
-		<Image src={images.lesson2}/>
-		<Heading size={4} textColor="txtPrimary" textFont="primary">
-			Compose your state
-		</Heading>
-	</div>
+	<LessonTitle image={images.lesson2} title="Lição 2">
+		Compose your state
+	</LessonTitle>
 );
 
 export const Lesson2Page1 = () => (
