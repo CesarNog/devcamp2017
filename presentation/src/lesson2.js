@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import {Heading, List, ListItem, Image, Appear, CodePane} from '../../src';
-import {images, colors} from './theme';
+import {Code,Heading, List, ListItem, Image, Appear, CodePane} from '../../src';
+import Spacer from "./spacer";
 
-import "./lesson2.css";
+import {images, colors} from './theme';
 
 export const Lesson2Title = () => (
 	<div>
 		<Heading size={1} caps textColor="txtPrimary" textFont="primary">
 			Lição 2
 		</Heading>
-		<Image src={images.lesson2} />
+		<Image src={images.lesson2}/>
 		<Heading size={4} textColor="txtPrimary" textFont="primary">
 			Compose your state
 		</Heading>
@@ -19,48 +19,48 @@ export const Lesson2Title = () => (
 export const Lesson2Page1 = () => (
 	<div>
 		<Heading size={4} caps textColor="txtPrimary" textFont="primary">
-			Bad 🙅
+			Trivial 👍
 		</Heading>
 		<CodePane
 			lang="js"
-			source={require('raw-loader!../assets/code/lesson1.1.code')}
+			source={require('raw-loader!../assets/code/lesson2.1a.code')}
 			margin="20px auto"
 		/>
+		<Appear fid="2">
+			<CodePane
+				lang="js"
+				source={require('raw-loader!../assets/code/lesson2.1b.code')}
+				margin="20px auto"
+			/>
+		</Appear>
 	</div>
 );
 
 export const Lesson2Page2 = () => (
 	<div>
 		<Heading size={4} caps textColor="txtPrimary" textFont="primary">
-			Good 👍
+			Assign/... vs Merge
 		</Heading>
-		<CodePane
-			lang="js"
-			source={require('raw-loader!../assets/code/lesson1.2.code')}
-			margin="20px auto"
-		/>
+		<iframe src="https://repl.it/IVKN/19" width="100%" height="600"/>
 	</div>
 );
+
 
 export const Lesson2Page3 = () => (
 	<div>
-		<CodePane
-			lang="js"
-			source={require('raw-loader!../assets/code/lesson1.3.code')}
-			margin="20px auto"
-		/>
-	</div>
-);
-
-export const Lesson2Page4 = () => (
-	<div>
-		<Heading size={4} fit textColor="txtPrimary" textFont="primary">
-			⭐ Mantenha mais simples possível, p.e. booleano
+		<Heading size={5} textColor="txtPrimary" textFont="primary">
+			⭐ Use composição para montar estado
 		</Heading>
-		<div style={{marginBottom:"2em"}} />
+		<Spacer/>
 		<Appear fid="1">
-			<Heading  size={4} fit textColor="txtPrimary" textFont="primary">
-				⭐ Extrair como estado só se for necessário (DRY)
+			<Heading size={5} textColor="txtPrimary" textFont="primary">
+				⭐ Object.assign faz só "shallow copies"
+			</Heading>
+		</Appear>
+		<Spacer/>
+		<Appear fid="2">
+			<Heading size={5} textColor="txtPrimary" textFont="primary">
+				⭐ lodash.merge faz "deep copies"
 			</Heading>
 		</Appear>
 	</div>

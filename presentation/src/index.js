@@ -8,41 +8,16 @@ import {
 
 import Title from './title';
 
-import {images, theme} from './theme';
-import Introduction from "./introduction";
-import AcmeShop from "./acmeshop";
-import {Lesson1Title, Lesson1Page1, Lesson1Page2, Lesson1Page3, Lesson1Page4} from "./lesson1";
-import {Lesson2Title, Lesson2Page1, Lesson2Page2, Lesson2Page3, Lesson2Page4} from "./lesson2";
+import { images, theme } from './theme';
+
+import AcmeShop from './acmeshop';
+import { Lesson1Title, Lesson1Page1, Lesson1Page2, Lesson1Page3, Lesson1Page4 } from './lesson1';
+import { Lesson2Title, Lesson2Page1, Lesson2Page2, Lesson2Page3, Lesson2Page4 } from './lesson2';
+import { Lesson3Title, Lesson3Page1} from './lesson3';
 
 require('normalize.css');
 require('../../src/themes/default/index.css');
 require('../assets/custom.css');
-
-const notes = {
-	introduction: '',
-	acmeshop: 'Click image to show component tree',
-	treestate: '',
-	lesson1: [
-		'',
-		'',
-		'Boolean is most simple state',
-		'Extract as state, if needed more than once - DRY principle',
-		'Resume'
-	],
-	lesson2: [
-		'',
-		'',
-		'Boolean is most simple state',
-		'Extract as state, if needed more than once - DRY principle',
-		'Resume'
-	],
-	lesson3: '',
-	lesson4: '',
-	lesson5: '',
-	lesson6: '',
-	lesson7: '',
-	lesson8: ''
-};
 
 export default class Presentation extends React.Component {
 	render() {
@@ -51,25 +26,15 @@ export default class Presentation extends React.Component {
 				<Slide transition={['fade']} bgImage={images.title}>
 					<Title/>
 				</Slide>
-				<Slide transition={['slide']}
-				       bgColor="bgPrimary"
-				       notes={notes.introduction}
-				>
+				<Slide transition={['slide']} bgColor="bgPrimary">
 					<Heading size={1} fit textColor="txtPrimary" textFont="primary">
 						O que é o estado de aplicação?
 					</Heading>
-				
 				</Slide>
-				<Slide transition={['fade']}
-				       bgColor="bgPrimary"
-				       notes={notes.acmeshop}
-				>
+				<Slide transition={['fade']} bgColor="bgPrimary">
 					<AcmeShop />
 				</Slide>
-				<Slide transition={['fade']}
-				       bgColor="bgPrimary"
-				       notes={notes.treestate}
-				>
+				<Slide transition={['fade']} bgColor="bgPrimary" >
 					<Image src={images.treestate} width="100%"/>
 					<Appear fid={1}>
 						<Heading size={1} fit textColor="txtPrimary" textFont="primary">
@@ -77,37 +42,54 @@ export default class Presentation extends React.Component {
 						</Heading>
 					</Appear>
 				</Slide>
-				<Slide transition={['zoom', 'fade']} bgColor="bgLesson1"
-				       notes={notes.lesson1[0]} >
+
+
+
+
+				<Slide transition={['zoom', 'fade']} bgColor="bgLesson1" >
 					<Lesson1Title/>
 				</Slide>
-				<Slide transition={['fade']} bgColor="bgLesson1"
-				       notes={notes.lesson1[1]} >
+				<Slide transition={['fade']} bgColor="bgLesson1">
 					<Lesson1Page1/>
 				</Slide>
-				<Slide transition={['fade']} bgColor="bgLesson1"
-				       notes={notes.lesson1[2]} >
+				<Slide transition={['fade']} bgColor="bgLesson1">
 					<Lesson1Page2/>
 				</Slide>
-				<Slide transition={['zoom','fade']} bgColor="bgLesson1"
-				       notes={notes.lesson1[3]} >
+				<Slide transition={['zoom', 'fade']} bgColor="bgLesson1">
 					<Lesson1Page3/>
 				</Slide>
-				<Slide transition={['zoom','fade']} bgColor="bgLesson1"
-				       notes={notes.lesson1[4]} >
+				<Slide transition={['zoom', 'fade']} bgColor="bgLesson1">
 					<Lesson1Page4/>
 				</Slide>
+
 				
-				<Slide transition={['zoom', 'fade']} bgColor="bgLesson2"
-				       notes={notes.lesson2[0]} >
+				
+				
+				
+				<Slide transition={['zoom', 'fade']} bgColor="bgLesson2">
 					<Lesson2Title/>
 				</Slide>
-				
-				<Slide transition={['fade']} bgColor="bgLesson2"
-				       notes={notes.lesson2[1]} >
+
+				<Slide transition={['fade']} bgColor="bgLesson2">
 					<Lesson2Page1/>
 				</Slide>
+
+				<Slide transition={['fade']} bgColor="bgLesson2">
+					<Lesson2Page2/>
+				</Slide>
+
+				<Slide transition={['fade']} bgColor="bgLesson2">
+					<Lesson2Page3/>
+				</Slide>
+
 				
+				
+				
+				<Slide transition={['zoom', 'fade']} bgColor="bgLesson3">
+					<Lesson3Title/>
+				</Slide>
+			
+			
 			</Deck>
 		);
 	}

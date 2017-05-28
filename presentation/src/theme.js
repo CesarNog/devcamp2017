@@ -8,7 +8,8 @@ const _images = {
 	treestate: require('../assets/compontent_tree_appstate.png'),
 	treestate_inv: require('../assets/compontent_tree_appstate_inv.png'),
 	lesson1: require('../assets/lesson1.jpg'),
-	lesson2: require('../assets/lesson2.jpg')
+	lesson2: require('../assets/lesson2.jpg'),
+	lesson3: require('../assets/lesson3.png')
 };
 
 preloader(_images);
@@ -21,12 +22,8 @@ export const theme = createTheme({
 	txtSecondary: 'rgba(53,37,33,0.8)',
 	bgPrimary: '#352521',
 	bgLesson1: '#41bae9',
-	bgLesson2: '#ff8500'
+	bgLesson2: '#ff8500',
+	bgLesson3: '#1D8B00'
 });
-
-export const colors = {
-	largeText: 'rgba(255,255,255,0.8)',
-};
-
 
 export const images = _images;

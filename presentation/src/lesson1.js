@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Heading, List, ListItem, Image, Appear, CodePane} from '../../src';
 import {images, colors} from './theme';
+import Spacer from "./spacer";
 
 export const Lesson1Title = () => (
 	<div>
@@ -15,7 +16,7 @@ export const Lesson1Title = () => (
 export const Lesson1Page1 = () => (
 	<div>
 		<Heading size={4} caps textColor="txtPrimary" textFont="primary">
-			Bad 🙅
+			Bad 💩
 		</Heading>
 		<CodePane
 			lang="js"
@@ -54,9 +55,9 @@ export const Lesson1Page4 = () => (
 		<Heading size={4} fit textColor="txtPrimary" textFont="primary">
 			⭐ Mantenha mais simples possível, p.e. booleano
 		</Heading>
-		<div style={{marginBottom:"2em"}} />
+		<Spacer />
 		<Appear fid="1">
-			<Heading  size={4} fit textColor="txtPrimary" textFont="primary">
+			<Heading size={4} fit textColor="txtPrimary" textFont="primary">
 				⭐ Extrair como estado só se for necessário (DRY)
 			</Heading>
 		</Appear>
