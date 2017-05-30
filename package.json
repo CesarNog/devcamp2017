@@ -1,6 +1,7 @@
 {
-  "name": "spectacle",
-  "version": "2.1.0",
+  "name": "devcamp2017",
+  "version": "1.0",
+  "private": true,
   "description": "ReactJS Powered Presentation Framework",
   "main": "lib/index.js",
   "scripts": {
@@ -27,6 +28,8 @@
     "react-typography": "^0.15.10",
     "redux": "^3.0.4",
     "redux-actions": "^2.0.3",
+    "spectacle": "^2.1.0",
+    "spectacle-code-slide": "^0.4.0",
     "styled-components": "^1.4.6",
     "victory-core": "^15.2.0"
   },

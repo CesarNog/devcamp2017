@@ -9,7 +9,9 @@ const _images = {
 	treestate_inv: require('../assets/compontent_tree_appstate_inv.png'),
 	lesson1: require('../assets/lesson1.jpg'),
 	lesson2: require('../assets/lesson2.jpg'),
-	lesson3: require('../assets/lesson3.png')
+	lesson3: require('../assets/lesson3.png'),
+	lesson4: require('../assets/lesson4.png'),
+	todolist: require('../assets/todolist.png')
 };
 
 preloader(_images);
@@ -23,7 +25,9 @@ export const theme = createTheme({
 	bgPrimary: '#352521',
 	bgLesson1: '#41bae9',
 	bgLesson2: '#ff8500',
-	bgLesson3: '#1D8B00'
+	bgLesson3: '#1D8B00',
+	bgLesson4: '#7D000F',
+	bgLesson5: '#052456'
 });
 
 export const images = _images;

@@ -21,7 +21,7 @@ export const Lesson2Page1 = () => (
 			source={require('raw-loader!../assets/code/lesson2.1a.code')}
 			margin="20px auto"
 		/>
-		<Appear fid="2">
+		<Appear fid="1">
 			<CodePane
 				lang="js"
 				source={require('raw-loader!../assets/code/lesson2.1b.code')}
