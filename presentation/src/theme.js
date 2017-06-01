@@ -7,11 +7,17 @@ const _images = {
 	tree: require('../assets/compontent_tree.png'),
 	treestate: require('../assets/compontent_tree_appstate.png'),
 	treestate_inv: require('../assets/compontent_tree_appstate_inv.png'),
+	todolist: require('../assets/todolist.png'),
+	maerchenonkel: require('../assets/maerchenonkel.png'),
+	suggestion: require('../assets/suggestion.gif'),
+	sad: require('../assets/sad.jpg'),
+	hollywood: require('../assets/hollywood.png'),
 	lesson1: require('../assets/lesson1.jpg'),
 	lesson2: require('../assets/lesson2.jpg'),
 	lesson3: require('../assets/lesson3.png'),
 	lesson4: require('../assets/lesson4.png'),
-	todolist: require('../assets/todolist.png')
+	lesson5: require('../assets/lesson5.png'),
+	lesson6: require('../assets/lesson6.png')
 };
 
 preloader(_images);
@@ -27,7 +33,8 @@ export const theme = createTheme({
 	bgLesson2: '#ff8500',
 	bgLesson3: '#1D8B00',
 	bgLesson4: '#7D000F',
-	bgLesson5: '#052456'
+	bgLesson5: '#C79133',
+	bgLesson6: '#052456'
 });
 
 export const images = _images;

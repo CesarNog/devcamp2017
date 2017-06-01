@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import {Code, Heading, List, ListItem, Image, Appear, CodePane} from '../../src';
+import {Text, Code, Heading, List, ListItem, Image, Appear, CodePane} from '../../src';
 import Spacer from './spacer';
 import LessonTitle from './lessonTitle';
-import {CodeSlide} from 'spectacle-code-slide';
-
 import {images, colors} from './theme';
 import TodoList from "./todolist";
 
@@ -86,19 +84,21 @@ export const Lesson3Page6a = () => (
 			Como fazer imutável? 🤔
 		</Heading>
 		<Spacer />
-		<Heading size={4} fit textColor="txtPrimary" textFont="primary">
+		<Text textColor="txtPrimary" textFont="primary">
 			https://github.com/facebook/immutable-js [60KiB]
-		</Heading>
-		<Heading size={4} fit textColor="txtPrimary" textFont="primary">
+		</Text>
+		<Text textColor="txtPrimary" textFont="primary">
 			https://github.com/rtfeldman/seamless-immutable [8KiB]
-		</Heading>
-		<Heading size={4} fit textColor="txtPrimary" textFont="primary">
+		</Text>
+		<Text textColor="txtPrimary" textFont="primary">
 			https://github.com/Yomguithereal/baobab [33KiB]
-		</Heading>
-		<Heading size={4} fit textColor="txtPrimary" textFont="primary">
-			https://github.com/mquan/cortex [16KiB]
-		</Heading>
-	
+		</Text>
+		<Text textColor="txtPrimary" textFont="primary">
+			https://github.com/planttheidea/crio [51KiB]
+		</Text>
+		<Text textColor="txtPrimary" textFont="primary">
+		... etc etc pp
+		</Text>
 	</div>
 );
 

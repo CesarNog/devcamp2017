@@ -1,2 +1,1 @@
-const update = (oldState, newState) =>
-	Object.assign(oldState, newState);
+const update = (state, newState) => Object.assign({}, state, newState);

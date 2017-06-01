@@ -1,4 +1,1 @@
-// 🐱‍👤
-const update = (oldState, newState) => (
-	{ ...oldState, ...newState }
-);
+const updateState = (state, newState) => ({ ...state, ...newState }); // 🐱‍👤
