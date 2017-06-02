@@ -122,38 +122,3 @@ export const Lesson6Page7 = () => (
 		</Heading>
 	</div>
 );
-
-export const Lesson6Page8 = () => (
-	<div>
-		<div>
-			<Heading size={4} caps textColor="txtPrimary" textFont="primary">
-				Just for fun!
-			</Heading>
-			<iframe
-				src="https://rawgit.com/ohager/stappo/master/demo/index.html"
-				width="100%" height="600"
-				style={{backgroundColor:"white", padding:"8px"}}
-			/>
-		</div>
-	</div>
-);
-
-export const Lesson6Page8b = () => (
-	<div>
-		<div>
-			<Heading size={4} caps textColor="txtPrimary" textFont="primary">
-				274 bytes!
-			</Heading>
-			<Spacer/>
-			<Text textColor="black" textFont="primary" bgColor="white"
-			style={{padding:"1em"}}
-			>
-				{require('raw-loader!../assets/code/lesson6.4.code')}
-			</Text>
-			<Spacer/>
-			<Text textColor="txtPrimary" textFont="primary">
-				Fully reactive App State Manager with immutable states
-			</Text>
-		</div>
-	</div>
-);

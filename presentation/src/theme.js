@@ -17,7 +17,8 @@ const _images = {
 	lesson3: require('../assets/lesson3.png'),
 	lesson4: require('../assets/lesson4.png'),
 	lesson5: require('../assets/lesson5.png'),
-	lesson6: require('../assets/lesson6.png')
+	lesson6: require('../assets/lesson6.png'),
+	lesson7: require('../assets/lesson7.png')
 };
 
 preloader(_images);
@@ -34,7 +35,8 @@ export const theme = createTheme({
 	bgLesson3: '#1D8B00',
 	bgLesson4: '#7D000F',
 	bgLesson5: '#C79133',
-	bgLesson6: '#052456'
+	bgLesson6: '#052456',
+	bgLesson7: '#780033'
 });
 
 export const images = _images;

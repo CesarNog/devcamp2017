@@ -6,7 +6,7 @@ const LessonTitle = ({ title, image, children = '' }) => (
 		<Heading size={1} caps textColor="txtPrimary" textFont="primary">
 			{title}
 		</Heading>
-		<Image src={image}/>
+		<Image src={image} height="320"/>
 		<Heading size={4} textColor="txtPrimary" textFont="primary">
 			{children}
 		</Heading>
