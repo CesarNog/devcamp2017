@@ -17,7 +17,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "component-playground": "^2.0.0",
+    "component-playground": "^3.1.1",
     "history": "^4.6.1",
     "lodash": "^4.17.4",
     "marksy": "^0.4.2",
