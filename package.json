@@ -28,10 +28,10 @@
     "react-typography": "^0.15.10",
     "redux": "^3.0.4",
     "redux-actions": "^2.0.3",
-    "spectacle": "^2.1.0",
+    "spectacle": "^6.0.0",
     "spectacle-code-slide": "^0.4.0",
     "styled-components": "^1.4.6",
-    "victory-core": "^15.2.0"
+    "victory-core": "^36.4.0"
   },
   "peerDependencies": {
     "prop-types": "^15.5.8",
